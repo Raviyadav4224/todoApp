@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+  </head>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <h1>
+      <span><ion-icon name="journal-outline"></ion-icon> My Tasks</span>
+      <ion-icon name="moon-outline" class="toggleDarkMode"> </ion-icon>
+    </h1>
+    <form class="inputTask">
+      <label for=""
+        ><ion-icon class="addBtn" name="add-outline"></ion-icon> Add a
+        task</label
+      >
+      <input
+        type="text"
+        name="task"
+        id="taskInput"
+        placeholder="Try typing 'Buy Milk'"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" class="submitBtn">
+        <ion-icon class="addBtn" name="add-outline"></ion-icon>
+      </button>
+    </form>
+    <ul class="tasks"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
